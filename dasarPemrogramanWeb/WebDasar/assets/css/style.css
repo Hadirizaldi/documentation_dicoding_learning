@@ -4,20 +4,58 @@
 /* *{
   border: 1px solid red;
 } */
-
-body {
-  font-family: 'Quicksand', sans-serif;
+*{
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.jumbotron{
+  width: 100%;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.jumbotron h1 {
+  font-weight: 700;
+}
+
+.jumbotron p {
+  font-weight: 400;
+}
+
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+}
+
+nav ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+nav ul li {
+  list-style: none;
+}
+
 nav ul li a{
+  color: white;;
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;  
 }
 
 nav ul li a:hover {
   font-weight: 700;
+  border-bottom: 2px solid white;
 }
 
 h2, h3 {
