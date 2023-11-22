@@ -10,6 +10,8 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .jumbotron{
@@ -58,6 +60,16 @@ nav ul li a:hover {
   border-bottom: 2px solid white;
 }
 
+main {
+  padding-left: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
 h2, h3 {
   color: #00a2c6;
 }
@@ -75,6 +87,13 @@ h2, h3 {
   max-height: 300px;
   object-fit: cover;
   object-position: center;
+}
+
+aside {
+  float: right;
+  width: 25%;
+
+  padding-left: 20px;
 }
 
 .profile {
