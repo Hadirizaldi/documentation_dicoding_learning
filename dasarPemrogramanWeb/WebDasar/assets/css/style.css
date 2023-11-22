@@ -1,9 +1,26 @@
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav ul li a{
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-weight: 700;
 }
 
 h2, h3 {
   color: #00a2c6;
+}
+
+.profile {
+  text-align: center;
 }
 
 footer {
@@ -13,4 +30,5 @@ footer {
   padding: 20px;
   color: white;
   background-color: #00a2c6;
+  font-weight: 700;
 }
