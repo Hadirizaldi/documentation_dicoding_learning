@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
 *,*::before, *::after {
   box-sizing: border-box;
 }
@@ -55,4 +54,111 @@ header.header {
   background-color: #425c77;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.38);
   color: white;
+}
+
+/* ============== main ================ */
+.main{
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.main__content {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.main__content .content__description {
+  flex: 1;
+}
+
+.main__content .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+.main__content .content__text {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.main__content .content__button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  padding: .8rem 2.5rem;
+  margin-block-start: 1rem;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #2D3E50;
+  cursor: pointer;
+  transition: all .15s ease-in;
+}
+
+.main__content .content__button:hover {
+  border: 3px solid #2D3E50;
+  color: #2D3E50;
+  background-color: transparent;
+}
+
+.main__content .content__image {
+  flex: 1;
+
+  display: flex;
+}
+
+.main__content img {
+  min-width: 250px;
+  width: 300px;
+  margin: auto;
+}
+
+.main__aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+.main__aside .social-media{
+  height: 100%;
+  display: flex;
+}
+
+.main__aside .social-media__list{
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #2D3E50;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.main__aside .social-media__item {
+  list-style-type: none;
+}
+
+.main__aside .social-media__link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all .1s ease-in-out; 
+}
+
+.main__aside .social-media__link:hover {
+  color: #89b0d9;
 }
