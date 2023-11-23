@@ -15,7 +15,6 @@ body {
 }
 
 header {
-  height: 350px;
   width: 100%;
 }
 
@@ -42,7 +41,6 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  /* z-index: 100; */
 }
 
 nav ul {
@@ -72,13 +70,17 @@ nav ul li a:hover {
 }
 
 main {
-  padding-left: 20px;
-  overflow: auto;
+  display: flex;
+  padding: 20px;
+  gap: 1.5rem;
 }
 
 #content {
-  float: left;
-  width: 75%;
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
 }
 
 h2, h3 {
@@ -90,7 +92,6 @@ h2, h3 {
   border-radius: 5px;
 
   padding: 20px;
-  margin-top: 20px;
 }
 
 .featured-image{
@@ -101,10 +102,7 @@ h2, h3 {
 }
 
 aside {
-  float: right;
-  width: 25%;
-
-  padding-left: 20px;
+  flex: 1;
 }
 
 .profile {
@@ -130,9 +128,13 @@ footer {
 
 /* responsive */
 @media(max-width: 1024px){
-  aside, #content {
-    width: 100%;
-    padding: 0;
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+    margin-bottom: 2rem;
   }
 
   nav ul {
@@ -146,8 +148,12 @@ footer {
   } 
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
   nav ul {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  main aside {
+    align-self: stretch;
   }
 }
