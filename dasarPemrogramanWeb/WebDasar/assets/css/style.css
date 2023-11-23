@@ -40,6 +40,8 @@ nav ul {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(12, minmax(0, 1fr));
+
+  justify-items: center;
 }
 
 nav ul li {
@@ -97,7 +99,10 @@ aside {
 }
 
 .profile {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .profile img {
@@ -112,4 +117,28 @@ footer {
   color: white;
   background-color: #00a2c6;
   font-weight: 700;
+}
+
+/* responsive */
+@media(max-width: 1024px){
+  aside, #content {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media(max-width: 900px){  
+  nav ul {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  } 
+}
+
+@media(max-width: 600px){
+  nav ul {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
