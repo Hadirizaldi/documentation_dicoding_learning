@@ -1,0 +1,65 @@
+@import "../abstract/index";
+
+.header{
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("../images/desktop/image-header.jpg");
+  
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3.5rem 3rem;
+
+    .nav__logo {
+
+      &-img{
+        width: 15rem;
+      }
+    }
+
+      .nav__box {
+        display: flex;
+        align-item: center;
+      }
+
+      .nav__list{
+        display: flex;
+        flex-direction: row;             
+        align-items: center; 
+        gap: 1.5rem;
+
+        list-style-type: none;
+        
+        .nav__item {
+          padding: .8rem 1.5rem;
+          border-radius: 2rem;
+          font-size: 1.6rem;
+          font-family: $font-Barlow;
+          text-transform: capitalize;
+          font-weight: $fw-medium;
+
+          .nav__link {
+            text-decoration: none;
+            color: $white;
+          }
+        }
+        .nav__item:last-child{
+          text-transform: uppercase;
+          padding: 1rem 1.5rem;
+          background-color: white;
+          border-radius: 2rem;
+
+          .nav__link {
+            color:$very-dark-desaturate-blue;
+          }
+          
+        }
+
+      }
+
+  }
+  
+}
