@@ -11,6 +11,10 @@
     .card-content__detail-title{
       max-width: 290px;
     }
+
+    .card-content__detail-link::after{
+      background-color: $yellow;
+    }
   }
 
   &--standout{
@@ -18,6 +22,11 @@
 
     .card-content__header-image{
       background-image: url("../images/desktop/image-stand-out.jpg");
+    }
+
+    .card-content__detail-link::after{
+      background-color: $soft-red;
+      
     }
   }
   
@@ -53,7 +62,30 @@
     }
 
     &-link {
+      position: relative;
+      font-size: 1.5rem;
+      font-size: 900;
+      font-family: $font-Fraunces;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $very-dark-desaturate-blue;
 
+      &::after {
+        content: "";
+        height: 1rem;
+        left: -.4rem;
+        bottom: -.3rem;
+        position: absolute;
+        width: 115px;
+        border-radius: 1rem;
+        opacity: .4;
+        transition: opacity 0.5s ease-in;
+        }
+
+        &:hover::after{
+          opacity: 1;
+          z-index: -1;
+      }
     }
 
   }
