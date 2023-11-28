@@ -7,6 +7,10 @@
     .card-content__header-image{
       background-image: url("../images/desktop/image-transform.jpg");
     }
+
+    .card-content__detail-title{
+      max-width: 290px;
+    }
   }
 
   &--standout{
@@ -33,10 +37,13 @@
     justify-content: center;
     gap: 3rem;
 
-    width: 50%;
+    max-width: 50%;
+    width: 100%;
     padding-inline: 10rem;
 
     &-title{
+      max-width: 350px;
+      width: 100%;
       color: $very-dark-desaturate-blue;
     }
 
@@ -44,5 +51,10 @@
       font-size: 1.4rem;
       line-height: 2.5rem;
     }
+
+    &-link {
+
+    }
+
   }
 }

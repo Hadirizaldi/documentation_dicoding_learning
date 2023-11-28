@@ -27,6 +27,7 @@ body {
 .heading-secondary {
   text-transform: capitalize;
   font-size: 2.5rem;
+  line-height: 3.5rem;
 }
 
 .card-content {
@@ -37,6 +38,9 @@ body {
 }
 .card-content--transform .card-content__header-image {
   background-image: url("../images/desktop/image-transform.jpg");
+}
+.card-content--transform .card-content__detail-title {
+  max-width: 290px;
 }
 .card-content--standout {
   flex-direction: row;
@@ -57,17 +61,19 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
-  width: 50%;
+  max-width: 50%;
+  width: 100%;
   padding-inline: 10rem;
 }
 .card-content__detail-title {
+  max-width: 350px;
+  width: 100%;
   color: hsl(212, 27%, 19%);
 }
 .card-content__detail-paragraf {
   font-size: 1.4rem;
   line-height: 2.5rem;
 }
-
 .header {
   width: 100%;
   display: flex;
