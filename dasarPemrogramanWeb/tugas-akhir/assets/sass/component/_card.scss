@@ -1,0 +1,48 @@
+.card-content{
+  display: flex;
+
+  &--transform{
+    flex-direction: row-reverse;
+
+    .card-content__header-image{
+      background-image: url("../images/desktop/image-transform.jpg");
+    }
+  }
+
+  &--standout{
+    flex-direction: row;
+
+    .card-content__header-image{
+      background-image: url("../images/desktop/image-stand-out.jpg");
+    }
+  }
+  
+  &__header {
+    width: 50%;
+    &-image {
+      height: 75vh;
+      background-size: cover;
+      background-position: center;    
+    }
+
+  }
+
+  &__detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+
+    width: 50%;
+    padding-inline: 10rem;
+
+    &-title{
+      color: $very-dark-desaturate-blue;
+    }
+
+    &-paragraf{
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+    }
+  }
+}

@@ -8,7 +8,7 @@
   background-image: url("../images/desktop/image-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   
   &__nav {
     display: flex;
@@ -75,6 +75,7 @@
 
     .jumbotron__title {
       color: $white;
+      
     }
 
     .jumbotron__arrow{
@@ -82,6 +83,7 @@
 
       &-img {
         width: 2.5rem;
+        height: 15%;
         position: absolute;
         top: 40%;
       }
