@@ -77,8 +77,12 @@ body {
   color: hsl(212, 27%, 19%);
 }
 .card-content__detail-paragraf {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
   font-size: 1.4rem;
   line-height: 2.5rem;
+  max-width: 350px;
+  color: hsl(232, 10%, 55%);
 }
 .card-content__detail-link {
   position: relative;
