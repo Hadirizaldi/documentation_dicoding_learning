@@ -44,6 +44,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-inline: auto;
     gap: 3rem;
 
     max-width: 50%;
@@ -57,11 +58,6 @@
     }
 
     &-paragraf{
-      font-family: $font-Barlow;
-      font-weight: 700;
-      font-size: 1.4rem;
-      line-height: 2.5rem;
-      max-width: 350px;
       color: $dark-grayish-blue;
     }
 
