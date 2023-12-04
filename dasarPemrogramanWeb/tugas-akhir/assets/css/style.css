@@ -163,6 +163,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5rem;
+  width: 80%;
+  min-width: 23rem;
 }
 .testimonial_card .content-card__profile-picture {
   border-radius: 100%;
@@ -299,7 +301,7 @@ body {
 }
 .testimonial__content-box {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .project {
