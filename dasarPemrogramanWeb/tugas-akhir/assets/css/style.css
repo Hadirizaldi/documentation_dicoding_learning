@@ -4,7 +4,7 @@
 *::before {
   padding: 0;
   margin: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -14,6 +14,7 @@ html {
 body {
   box-sizing: border-box;
   max-width: 1440px;
+  width: 100%;
   margin-inline: auto;
 }
 
@@ -184,6 +185,13 @@ body {
   margin: -4rem;
 }
 
+.project-box {
+  width: 25%;
+}
+.project-box__image {
+  width: 100%;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -292,4 +300,13 @@ body {
 .testimonial__content-box {
   display: flex;
   gap: 1rem;
+}
+
+.project {
+  margin-block-start: 5rem;
+}
+.project__content-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
