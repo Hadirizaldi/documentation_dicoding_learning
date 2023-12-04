@@ -16,6 +16,12 @@ body {
   max-width: 1440px;
   width: 100%;
   margin-inline: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .heading {
@@ -154,8 +160,8 @@ body {
 }
 
 .testimonial_card {
-  width: 40%;
-  padding: 1.5rem;
+  width: 30%;
+  padding: 1rem;
 }
 .testimonial_card .content-card {
   display: flex;
@@ -163,7 +169,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  width: 80%;
+  width: 100%;
   min-width: 23rem;
 }
 .testimonial_card .content-card__profile-picture {
@@ -287,9 +293,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-  max-width: 80%;
-  margin-inline: auto;
+  gap: 10rem;
+  width: 100%;
   padding: 10rem 0;
 }
 .testimonial__text-box {
@@ -301,7 +306,11 @@ body {
 }
 .testimonial__content-box {
   display: flex;
-  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 2rem;
 }
 
 .project {
